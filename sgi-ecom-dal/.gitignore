@@ -1,0 +1,56 @@
+# Gradle
+.gradle/
+build/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# IntelliJ
+.idea
+*.ipr
+*.iml
+*.iws
+
+# NetBeans
+nb-configuration.xml
+
+# Visual Studio Code
+.vscode
+.factorypath
+
+# OSX
+.DS_Store
+
+# Vim
+*.swp
+*.swo
+
+# patch
+*.orig
+*.rej
+
+# Local environment
+.env
+
+### Intellij
+.idea/
+.idea_modules/
+/out/
+*.iml
+*.iws
+
+### logs
+
+
+### gradle
+.gradle
+build/
+
+# pif files
+.pid.lock
+
+###
+
