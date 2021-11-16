@@ -1,1 +1,42 @@
-plugins {    id 'java'    id 'io.quarkus'}repositories {    mavenCentral()    mavenLocal()}dependencies {    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")    implementation 'io.quarkus:quarkus-resteasy-reactive-jsonb'    //implementation 'io.quarkus:quarkus-mongodb-client'    //implementation 'io.quarkus:quarkus-mongodb-panache'//    implementation 'io.quarkus:quarkus-resteasy-jsonb'    implementation 'io.quarkus:quarkus-resteasy-reactive'    implementation 'io.quarkus:quarkus-jacoco'    implementation 'io.quarkus:quarkus-config-yaml'//    implementation 'io.quarkus:quarkus-resteasy'    implementation 'io.quarkus:quarkus-kubernetes'    implementation 'io.quarkus:quarkus-arc'    testImplementation 'io.quarkus:quarkus-junit5'    testImplementation 'io.rest-assured:rest-assured'}group 'org.sgi.product'version '1.0.0-SNAPSHOT'java {    sourceCompatibility = JavaVersion.VERSION_11    targetCompatibility = JavaVersion.VERSION_11}compileJava {    options.encoding = 'UTF-8'    options.compilerArgs << '-parameters'}compileTestJava {    options.encoding = 'UTF-8'}
+plugins {
+    id 'java'
+    id 'io.quarkus'
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
+    implementation 'io.quarkus:quarkus-resteasy-reactive-jsonb'
+    //implementation 'io.quarkus:quarkus-mongodb-client'
+    //implementation 'io.quarkus:quarkus-mongodb-panache'
+//    implementation 'io.quarkus:quarkus-resteasy-jsonb'
+    implementation 'io.quarkus:quarkus-resteasy-reactive'
+    implementation 'io.quarkus:quarkus-jacoco'
+    implementation 'io.quarkus:quarkus-config-yaml'
+//    implementation 'io.quarkus:quarkus-resteasy'
+    implementation 'io.quarkus:quarkus-kubernetes'
+    implementation 'io.quarkus:quarkus-arc'
+    testImplementation 'io.quarkus:quarkus-junit5'
+    testImplementation 'io.rest-assured:rest-assured'
+}
+
+group 'org.sgi.product'
+version '1.0.0-SNAPSHOT'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-parameters'
+}
+
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
